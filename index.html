@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+     <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <!-- <img src="/logo.PNG" class="logo"> -->
+            <nav class="navbar">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="/skills.html">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p>Developer</p>
+        <h1>Hy, I'm<span> Muhammad Saad</span> <br>from Pakistan</h1>
+    </div>
+        </div>
+    </div>
+    <!-- ------about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/img1.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>Hello, My name is Muhammad Saad and I'm from Pakistan. I'm a web developer using HTML, CSS, JavaScript. I can also design a UX/UI design website using different shades and colors in any website. I'm also a youtube manager and can manage your whole youtube channel. I'm also blog writer, content writer, copy writer, ghost writer, research writer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents">
+                        <ul>
+                            <li><span>UX/UI</span><br>Designing Web by UX/Ui design</li>
+                            <li><span>Developer</span><br>Web Developer</li>
+                            <li><span>Web Development</span><br>HTML, CSS, javaScript</li>
+                            <li><span>Designer</span><br>Logo Designer using photoshop and illustrator</li>
+                            <li><span>Writer</span><br>Copy Writing, Content Writing, Blog Writing, Ghost Writing, Research writing</li>
+                            <li><span>Manager</span><br>YouTube Manager</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>sm3454691@gmail.com</p>
+                <p>03134550394</p>
+                <a class= "btn"href="/HTMLnotes.pdf" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="10" placeholder="Your message"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Made by <span>Technical Saad</span></p>
+    </div>
+    </div>
+    <script>
+        const msg = document.getElementById("msg");
+        then(response => {
+            msg.innerHTML = "Meaasge sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+    </script>
+</body>
+</html>

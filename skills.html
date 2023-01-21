@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080808;
+    color: #fff;
+}
+#header{
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    padding: 30px 10%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+h2{
+    color: #ff004f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <!-- <img src="/logo.PNG" class="logo"> -->
+            <nav class="navbar">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html">About Us</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/index.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        <p>Developer</p>
+        <h1>Hy, I'm<span> Muhammad Saad</span> <br>from Pakistan</h1>
+    </div>
+    <h2>Skills</h2>
+    <div class="tab-contents">
+        <ul>
+            <li><span>UX/UI</span><br>I can design your website using UX/UI dsign by using different colors and different shades,<br> backgrounds, and differfent icons. </li>
+            <li><span>Web Development</span><br>I'm a web developer using HTML, CSS, and javaScript. I can create a responsive website for you,<br> and for your business.</li>
+            <li><span>Designer</span><br>I can design perfect log for your brand or for your business usign<br> adobe photoshope, adobe illustartor. I'm perfect in logo designing.</li>
+            <li><span>Writer</span><br>I'm also a Copy Writer, Content Writer, Blog Writer, Ghost Writer, Research writer<br>I will write your blogs at any time when you want. I'm expert in microsoft excel, microsoft word, etc</li>
+            <li><span>Manager</span><br>YouTube Manager: I can handel your whole youtube channel. I can write subtitles of your videos,<br> can edit creative thumbnail for your videos, and can also edit your videos</li>
+        </ul>
+    </div>
+</body>
+</html>
